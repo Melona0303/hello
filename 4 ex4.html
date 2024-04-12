@@ -1,0 +1,40 @@
+<style>
+    input+span {
+        display: none;
+    }
+
+    input:checked+span {
+        display: inline-block;
+    }
+
+    input:checked+span+span {
+        display: none;
+    }
+</style>
+
+<body>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+    <hr>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+
+
+</body>
+<br><br><br><br><br><br><br>
+<style>
+    .r:focus {
+    background: yellow;
+    color: red;
+    }
+    .g:focus {
+    background: yellow;
+    color: green;
+    }
+    </style>
+    <body>
+    <input class="r" value="focus => red"><br>
+    <input class="g" value="focus => green">
+    </body>
